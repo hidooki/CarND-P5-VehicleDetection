@@ -119,7 +119,7 @@ The pipeline is implemented in the `make_pipeline()` function in the `runner.py`
 
 I then used `scipy.ndimage.measurements.label()` to identify individual blobs in the heatmap sum.  I then assumed each blob corresponded to a vehicle.  I constructed bounding boxes to cover the area of each blob detected.  
 
-Here's an example result showing the heatmap from the series six test images provided with the project, with the bounding boxes then overlaid on original frame:
+Here's an example result showing the heatmap from the series six test images provided with the project:
 
 
 ![alt text][image5]
