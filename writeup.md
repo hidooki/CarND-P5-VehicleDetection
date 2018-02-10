@@ -73,7 +73,7 @@ In ended up with YCrCb for the color space, orient = 8, 8 pixels per cell and 2 
 
 #### Training the classifier
 
-I trained a linear SVM classifier using the sklearn library. In addition to the HOG features, I also used spatial binning where I resized the images into 32 x 32 blocks. As a final set of features I used a color histogram, where I grouped each color channel into 32 bins. The set of all these features put together ()
+I trained a linear SVM classifier using the sklearn library. In addition to the HOG features, I also used spatial binning where I resized the images into 32 x 32 blocks. As a final set of features I used a color histogram, where I grouped each color channel into 32 bins. 
 
 In training the classifier I used the full set of images provided (8,792 cars and 8,968 non-cars), where I kept 20% for test data and I used the other 80% for training. When using all the features described above (7,872 features per image in total), I got a 99.38% accuracy on the test set.
 
