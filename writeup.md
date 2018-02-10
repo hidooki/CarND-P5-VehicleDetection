@@ -67,7 +67,7 @@ and here is an example of a **non-car** using the same parameters:
 #### Final choice of HOG parameters
 
 I found that the choice of color space was quite important, with more 'traditional' choices as RGB not performing as well as color spaces that separate the luminosity from the color features. In particular, the YCrCb space seemed to perform well when classifying the image set provided.
-I experimented with different values of the `orient` parameter, trying to find the right balance between precision and extraction time. I find that, when paired with color histogram and spatial features, a choice of orient=8 works well. For the other HOG parameters I used the values suggested in the lesson, given that later at classification time I used a scaling parameter to zoom in/out of the image.
+I experimented with different values of the `orient` parameter, trying to find the right balance between precision and extraction time. I found that, when paired with color histogram and spatial features, a choice of orient=8 works well. For the other HOG parameters I used the values suggested in the lesson, given that later at classification time I used a scaling parameter to zoom in/out of the image.
 
 In ended up with YCrCb for the color space, orient = 8, 8 pixels per cell and 2 cells per HOG block. I ran the HOG feature extraction on all three color channels.
 
